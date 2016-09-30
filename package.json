@@ -1,0 +1,20 @@
+{
+  "name": "cordova-ios-voip-push",
+  "version": "1.0.0",
+  "description": "Register and receive VoIP push notifications in hybrid app projects with Cordova",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hitman666/cordova-ios-voip-push.git"
+  },
+  "keywords": [
+    "voip",
+    "cordova",
+    "push"
+  ],
+  "author": "Nikola Brežnjak<nikola.breznjak@gmail.com> (http://www.nikola-breznjak.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hitman666/cordova-ios-voip-push/issues"
+  },
+  "homepage": "https://github.com/Hitman666/cordova-ios-voip-push#readme"
+}
