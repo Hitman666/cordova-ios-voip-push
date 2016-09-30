@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.nikola-breznjak.voippush" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>VoIPPushNotification</name>
+    <js-module name="VoIPPushNotification" src="www/VoIPPushNotification.js">
+        <clobbers target="VoIPPushNotification" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VoIPPushNotification">
+                <param name="ios-package" value="VoIPPushNotification" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/VoIPPushNotification.h" />
+        <source-file src="src/ios/VoIPPushNotification.m" />
+    </platform>
+</plugin>
