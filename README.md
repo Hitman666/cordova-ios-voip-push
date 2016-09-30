@@ -3,7 +3,7 @@
 ## TL;DR
 Cordova plugin for receiving VoIP push notifications on **iOS 8.0+ only**.
 
-## Install
+## Installation
 _I'll add npm installation step once I do that._
 
 `ionic plugin add http`
@@ -33,6 +33,56 @@ push.on('error', function(e) {
 ```
 
 ## Running the demo
+
+### Ionic setup
+Clone this repo:
+
+`git clone https://github.com/Hitman666/cordova-ios-voip-push.git`
+
+CD into the cloned project and into the Ionic demo project:
+
+`cd cordova-ios-voip-push && cd ionicDemo`
+
+Install the dependencies:
+
+`npm install && bower install`
+
+Install all the plugins and platforms (please note that this process may take a while to complete):
+
+`ionic state reset`
+
+Add the plugin:
+
+`ionic plugin add ../thePlugin/VoIPPushNotification`
+
+Prepare the project:
+
+`ionic prepare ios`
+
+Open the project in XCode by going into `platforms/ios` and opening up the `pluginTest.xcodeproj` file.
+
+### XCode setup
+If you don't have an AppID and VoIP push certificate created in your [Apple developer account](https://developer.apple.com/account/), you can do so by following my instructions from the [How to create a native iOS app that can receive VoIP push notifications](http://www.nikola-breznjak.com/blog/ios/create-native-ios-app-can-receive-voip-push-notifications/) tutorial.
+
+_Take your time to do that an then come back, I'll wait._
+
+To use the VoIP push in the app, you need to turn ON the `Background Modes` for your app and check few of the checkboxes:
+
+![](http://i.imgur.com/U8Xcrlj.png)
+
+Make sure you select the following options:
+
++ Audio, Airplay, and Picture in Picture
++ Voice over IP
++ Background fetch
++ Remote notifications
+
+Next, you need to add PushKit framework to your project:
+
+![](http://i.imgur.com/NdLMkC4.png)
+
+Also (_yeah, I know, a lot of setup_), you need to make sure that you set the appropriate Bundle Identifier. _You should have read about this in the [tutorial](http://www.nikola-breznjak.com/blog/ios/create-native-ios-app-can-receive-voip-push-notifications/) I linked above._ 
+
 
 
 ## Long reads; for those who care
