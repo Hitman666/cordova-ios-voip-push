@@ -14,5 +14,7 @@
         
         <header-file src="src/ios/VoIPPushNotification.h" />
         <source-file src="src/ios/VoIPPushNotification.m" />
+
+        <framework src="PushKit.framework" />
     </platform>
 </plugin>
