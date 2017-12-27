@@ -6,7 +6,7 @@ Cordova plugin for receiving VoIP push notifications on **iOS 8.0+ only**.
 ## Installation
 For Ionic:
 
-`ionic plugin add cordova-ios-voip-push`
+`ionic cordova plugin add cordova-ios-voip-push`
 
 For Cordova:
 
@@ -59,19 +59,19 @@ Install the platform and plugins (please note that this process may take a while
 
 Add the plugin (either one of three options would work):
 
-`ionic plugin add cordova-ios-voip-push`
+`ionic cordova plugin add cordova-ios-voip-push`
 
 or
 
-`ionic plugin add ../thePlugin/VoIPPushNotification`
+`ionic cordova plugin add ../thePlugin/VoIPPushNotification`
 
 or like this:
 
-`ionic plugin add https://github.com/Hitman666/cordova-ios-voip-push.git`
+`ionic cordova plugin add https://github.com/Hitman666/cordova-ios-voip-push.git`
 
 Prepare the project:
 
-`ionic prepare ios`
+`ionic cordova prepare ios`
 
 Open the project in XCode by going into `platforms/ios` and opening up the `pluginTest.xcodeproj` file.
 
