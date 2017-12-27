@@ -71,7 +71,7 @@ or like this:
 
 Prepare the project:
 
-`ionic prepare ios`
+`ionic cordova prepare ios`
 
 Open the project in XCode by going into `platforms/ios` and opening up the `pluginTest.xcodeproj` file.
 
