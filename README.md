@@ -49,6 +49,10 @@ CD into the cloned project and the Ionic demo project:
 
 `cd cordova-ios-voip-push && cd ionicDemo`
 
+open config.xml and change app id:
+`<widget id="<YOUR APP ID>" ....>`
+
+
 Install the dependencies:
 
 `npm install && bower install`
