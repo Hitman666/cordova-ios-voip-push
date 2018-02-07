@@ -4,14 +4,20 @@
     <js-module name="VoIPPushNotification" src="www/VoIPPushNotification.js">
         <clobbers target="VoIPPushNotification" />
     </js-module>
-    
+
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="VoIPPushNotification">
                 <param name="ios-package" value="VoIPPushNotification" />
             </feature>
         </config-file>
-        
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>fetch</string>
+                <string>remote-notification</string>
+                <string>voip</string>
+            </array>
+        </config-file>
         <header-file src="src/ios/VoIPPushNotification.h" />
         <source-file src="src/ios/VoIPPushNotification.m" />
 
